@@ -1,3 +1,4 @@
 Django
 requests
 django-extensions
+factory_boy

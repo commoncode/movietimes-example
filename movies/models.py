@@ -7,7 +7,7 @@ class Movie(models.Model):
     overview = models.TextField()
     rating = models.DecimalField(max_digits=3, decimal_places=1, null=True)
 
-    actors = models.ManyToManyField('Actor')
+    actors = models.ManyToManyField('Actor', related_name='movies')
 
     def __str__(self):
         return self.title
