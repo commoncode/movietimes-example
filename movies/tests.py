@@ -20,3 +20,14 @@ class FactoryTestCase(TestCase):
 
         for actor in actors:
             self.assertEqual(actor.movies.all()[0], movie)
+
+
+class BestMoviesTestCase(TestCase):
+
+    def test_get_best_movies_url(self):
+        response = self.client.get('/movies/best/')
+        self.assertIs(response.status_code, 200)
+
+    def test_best_movies_returns_json(self):
+        response = self.client.get('/movies/best/')
+        self.assertIs(response['content-type'], 'application/json')
