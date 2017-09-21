@@ -1,2 +1,11 @@
+# Temporary Files
 *.pyc
 __pycache__
+.cache
+
+# Environment
+.python-version
+
+# Editors
+.idea
+*-sublime*

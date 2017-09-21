@@ -2,3 +2,5 @@ Django
 requests
 django-extensions
 factory_boy
+pytest
+pytest-django
